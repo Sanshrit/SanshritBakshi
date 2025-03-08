@@ -34,8 +34,8 @@
 		<!-- Nav -->
 		<nav id="nav">
 			<ul class="links">
-				<li class="active"><a href="#projects">Projects</a></li>
-				<li><a href="#skills">Skills</a></li>
+				<li class="active"><a href="#skills">Skills</a></li>
+				<li><a href="#projects">Projects</a></li>
 				<li><a href="#about">About</a></li>
 				<li><a href="#contact">Contact</a></li>
 			</ul>
@@ -51,42 +51,57 @@
 		<div id="main">
 
 			<!-- Skills Section -->
-			<section id="skills" class="post featured">
-				<header class="major">
-					<h2>Technologies and Tools</h2>
-					<p>What I am well versed with.</p>
-				</header>
-				<div class="row">
-					<div class="col-4 col-12-small">
-						<h3>Programming Languages</h3>
-						<ul class="skill-list">
-							<li>Python</li>
-							<li>JavaScript</li>
-							<li>Java</li>
-							<li>C++</li>
-						</ul>
-					</div>
-					<div class="col-4 col-12-small">
-						<h3>Frameworks & Libraries<br></br></h3>
-						<ul class="skill-list">
-							<li>React</li>
-							<li>Node.js</li>
-							<li>Django</li>
-							<li>Flask</li>
-						</ul>
-					</div>
-					<div class="col-4 col-12-small">
-						<h3>Tools & Technologies<br></br></h3>
-						<ul class="skill-list">
-							<li>Git</li>
-							<li>Docker</li>
-							<li>AWS</li>
-							<li>Database Design</li>
-						</ul>
-					</div>
-				</div>
-			</section> vv
+			<style>
+				.skills-container {
+					width: 100%;
+					max-width: 600px;
+					margin: auto;
+				}
 
+				.dropdown {
+					background-color: #f8f9fa;
+					color: #333;
+					padding: 10px;
+					border: 1px solid #ddd;
+					cursor: pointer;
+					text-align: left;
+					width: 100%;
+					font-size: 18px;
+					font-weight: bold;
+					text-align: center;
+				}
+
+				.dropdown-content {
+					display: none;
+					padding: 10px;
+					border: 1px solid #ddd;
+					border-top: none;
+				}
+			</style>
+
+			<div class="skills-container">
+				<button class="dropdown" onclick="toggleDropdown('languages')">Programming Languages</button>
+				<div id="languages" class="dropdown-content">
+					Python, C/C++, JavaScript, SQL, HTML/CSS
+				</div>
+
+				<button class="dropdown" onclick="toggleDropdown('frameworks')">Libraries & Frameworks</button>
+				<div id="frameworks" class="dropdown-content">
+					Node.js, Django, React, TensorFlow, PyTorch
+				</div>
+
+				<button class="dropdown" onclick="toggleDropdown('tools')">Tools & Technologies</button>
+				<div id="tools" class="dropdown-content">
+					AWS, Docker, Kubernetes, MongoDB, MySQL, Neo4j
+				</div>
+			</div>
+
+			<script>
+				function toggleDropdown(id) {
+					var content = document.getElementById(id);
+					content.style.display = content.style.display === "block" ? "none" : "block";
+				}
+			</script>
 			<!-- Featured Project -->
 			<section id="projects">
 				<article class="post featured">
@@ -94,15 +109,16 @@
 						<h2>Featured Project</h2>
 						<p>My most recent work</p>
 					</header>
-					<a target="_blank" href="https://sanbak.pythonanywhere.com/" class="image main"><img
-							src="images/pic01.jpg" alt="Featured Project" /></a>
+					<a target="_blank" href="https://github.com/rohanddave/PdpImageManipulatorAndEnhancer"
+						class="image main"><img src="images/pic01.png" alt="Featured Project" /></a>
 					<div class="content">
-						<p>This is my flagship project that demonstrates my skills in algorithm implementation and
-							problem-solving. Built with Python and deployed on PythonAnywhere, this application
-							showcases efficient data structures and optimization techniques.</p>
+						<p>Java / Java Swing based image processing application which implements complex image
+							operations. The application is designed with strict adherence to Object oriented principles
+							and design patterns (Adapter, Command, MVC) for long term reliability and scalability.
+							</p>
 					</div>
 					<ul class="actions special">
-						<li><a href="https://sanbak.pythonanywhere.com/" class="button large" target="_blank">View
+						<li><a href="https://github.com/rohanddave/PdpImageManipulatorAndEnhancer" class="button large" target="_blank">View
 								Project</a></li>
 					</ul>
 				</article>
@@ -110,24 +126,13 @@
 
 			<!-- Projects -->
 			<section class="posts">
+				
 				<article>
 					<header>
-						<h2>Algorithm Visualizer</h2>
-					</header>
-					<a href="#" class="image fit"><img src="images/pic02.jpg" alt="Algorithm Visualizer" /></a>
-					<p>An interactive tool for visualizing common algorithms like sorting, pathfinding, and graph
-						traversal algorithms. Built with JavaScript and HTML Canvas.</p>
-					<ul class="actions special">
-						<li><a href="#" class="button">View Project</a></li>
-					</ul>
-				</article>
-				<article>
-					<header>
-						<h2>Data Analysis Dashboard</h2>
+						<h2>Airline Sentiment Analysis</h2>
 					</header>
 					<a href="#" class="image fit"><img src="images/pic03.jpg" alt="Data Analysis Dashboard" /></a>
-					<p>A comprehensive dashboard for data visualization and analysis. Built with Python, Pandas, and
-						Plotly, deployed as a web application.</p>
+					<p>Coming Soon.....</p>
 					<ul class="actions special">
 						<li><a href="#" class="button">View Project</a></li>
 					</ul>
@@ -137,19 +142,7 @@
 						<h2>Machine Learning Model</h2>
 					</header>
 					<a href="#" class="image fit"><img src="images/pic04.jpg" alt="Machine Learning Model" /></a>
-					<p>A predictive model for [specific domain] using supervised learning techniques. Implemented with
-						scikit-learn and TensorFlow.</p>
-					<ul class="actions special">
-						<li><a href="#" class="button">View Project</a></li>
-					</ul>
-				</article>
-				<article>
-					<header>
-						<h2>API Development</h2>
-					</header>
-					<a href="#" class="image fit"><img src="images/pic05.jpg" alt="API Development" /></a>
-					<p>RESTful API development for a service-oriented architecture. Built with Node.js, Express, and
-						MongoDB with comprehensive documentation.</p>
+					<p>Coming Soon...</p>
 					<ul class="actions special">
 						<li><a href="#" class="button">View Project</a></li>
 					</ul>
@@ -168,14 +161,17 @@
 						including AVEVA OSISoft PI Time Series Historian, Python, AWS, and SQL. Throughout my career, I
 						have taken on leadership roles, managing projects, ensuring system stability during critical
 						failure scenarios, and driving solutions that make a tangible impact.<br></p>
-					<p>	My long-term vision includes stepping into leadership positions where I can influence decisions and
-						guide teams toward innovation. Beyond technical expertise, I enjoy teaching and sharing knowledge,
-						which aligns with my strong communication skills and desire to inspire others.</p>	
+					<p> My long-term vision includes stepping into leadership positions where I can influence decisions
+						and
+						guide teams toward innovation. Beyond technical expertise, I enjoy teaching and sharing
+						knowledge,
+						which aligns with my strong communication skills and desire to inspire others.</p>
 
 					<p>
-						Whether working on complex technical challenges, fostering collaboration, or mentoring peers, I am
+						Whether working on complex technical challenges, fostering collaboration, or mentoring peers, I
+						am
 						committed to growth, innovation, and making meaningful contributions to the tech industry.
-					</p>	
+					</p>
 				</div>
 			</section>
 
@@ -218,9 +214,9 @@
 					<h3>Social</h3>
 					<ul class="icons alt">
 						<li><a href="https://github.com/Sanshrit" class="icon brands fa-github" target="_blank"><span
-							class="label">GitHub</span></a></li>
-				<li><a href="https://www.linkedin.com/in/sanshrit" class="icon brands fa-linkedin" target="_blank"><span
-							class="label">LinkedIn</span></a></li>
+									class="label">GitHub</span></a></li>
+						<li><a href="https://www.linkedin.com/in/sanshrit" class="icon brands fa-linkedin"
+								target="_blank"><span class="label">LinkedIn</span></a></li>
 					</ul>
 				</section>
 			</section>
