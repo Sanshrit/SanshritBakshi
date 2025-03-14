@@ -1,273 +1,314 @@
-<!DOCTYPE HTML>
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<title>Sanshrit Bakshi</title>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<link rel="stylesheet" href="assets/css/main.css" />
-	<noscript>
-		<link rel="stylesheet" href="assets/css/noscript.css" />
-	</noscript>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanshrit Bakshi - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="script.js" defer></script>
 </head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="container">
+            <div class="logo">SB</div>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#research">Research</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+    </nav>
 
-<body class="is-preload">
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Sanshrit Bakshi</h1>
+                <h2>Computer Science Graduate Student</h2>
+                <p>Specializing in software development, data engineering, and machine learning</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">Contact Me</a>
+                    <a href="#projects" class="btn btn-secondary">View My Work</a>
+                </div>
+                <div class="social-links">
+                    <a href="https://linkedin.com/in/sanshrit" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/Sanshrit" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="mailto:bakshi.san@northeastern.edu"><i class="far fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-	<!-- Wrapper -->
-	<div id="wrapper" class="fade-in">
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I am a Computer Science graduate student at Northeastern University with a background in Electronics & Instrumentation Engineering. My professional experience spans data engineering, automation, and software development with a focus on real-time data systems.</p>
+                    <p>With over 2 years of industry experience at Koch Business Solutions (Georgia-Pacific), I've led automation projects, developed computer vision applications, and optimized AWS data pipelines.</p>
+                    <p>I'm passionate about leveraging technology to solve complex problems and am currently focused on expanding my expertise in machine learning, cloud computing, and software architecture.</p>
+                </div>
+                <div class="skills">
+                    <h3>Technical Skills</h3>
+                    <div class="skill-categories">
+                        <div class="skill-category">
+                            <h4>Programming</h4>
+                            <ul class="skill-list">
+                                <li>Java</li>
+                                <li>Python</li>
+                                <li>SQL</li>
+                                <li>C/C++</li>
+                            </ul>
+                        </div>
+                        <div class="skill-category">
+                            <h4>Frameworks & Libraries</h4>
+                            <ul class="skill-list">
+                                <li>PyTorch</li>
+                                <li>HuggingFace</li>
+                                <li>TensorFlow</li>
+                                <li>Node.js</li>
+                                <li>Django</li>
+                                <li>REST API</li>
+                            </ul>
+                        </div>
+                        <div class="skill-category">
+                            <h4>Cloud & DevOps</h4>
+                            <ul class="skill-list">
+                                <li>AWS (S3, Lambda, EC2, etc.)</li>
+                                <li>GCP (BigQuery, DataFlow)</li>
+                                <li>Docker</li>
+                                <li>Git</li>
+                            </ul>
+                        </div>
+                        <div class="skill-category">
+                            <h4>Databases</h4>
+                            <ul class="skill-list">
+                                <li>MySQL</li>
+                                <li>MongoDB</li>
+                                <li>AWS Redshift</li>
+                                <li>AWS Aurora</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-		<!-- Intro -->
-		<div id="intro">
-			<h1>Sanshrit Bakshi</h1>
-			<p>Software Engineer / Algorithms / Problem Solving</p>
-			<p><a href="https://twitter.com/Sanshrit">@Sanshrit</a></p>
-			<ul class="actions">
-				<li><a href="#projects" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
-			</ul>
-		</div>
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>MS in Computer Science</h3>
+                        <h4>Northeastern University, Boston</h4>
+                        <p class="timeline-date">September 2024 - Present</p>
+                        <p>GPA: 4.0/4.0</p>
+                        <p>Relevant Courses: Programming Design Paradigm, Algorithms, Databases, Natural Language Processing</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Bachelor of Engineering - Electronics & Instrumentation</h3>
+                        <h4>Ramaiah Institute of Technology, Bengaluru</h4>
+                        <p class="timeline-date">August 2018 - July 2022</p>
+                        <p>GPA: 9.75/10.0 (Rank 1)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-		<!-- Header -->
-		<header id="header">
-			<a href="#" class="logo">Sanshrit Bakshi</a>
-		</header>
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Work Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Programmer Analyst</h3>
+                        <h4>Koch Business Solutions India at Georgia-Pacific LLC</h4>
+                        <p class="timeline-date">April 2023 - July 2024</p>
+                        <ul class="experience-list">
+                            <li>Led intensive automation projects, including patching automation saving 2 hours per patch</li>
+                            <li>Integrated ServiceNow with Microsoft Teams for P1 ticket alerts, maximizing OLA/SLA compliance</li>
+                            <li>Implemented solutions for troubleshooting issues with PI Connectors and PI Collective</li>
+                            <li>Enhanced applications for Computer Vision Project ensuring site engineer safety</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Associate Programmer Analyst</h3>
+                        <h4>Koch Business Solutions India at Georgia-Pacific LLC</h4>
+                        <p class="timeline-date">July 2022 - April 2023</p>
+                        <ul class="experience-list">
+                            <li>Standardized deployment of new PI Interfaces and PI Connectors</li>
+                            <li>Maintained AWS ETL data pipelines delivering critical equipment information</li>
+                            <li>Maximized cost optimization by cleaning databases and decommissioning unnecessary AWS resources</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Technology Intern</h3>
+                        <h4>Koch Business Solutions India at Georgia-Pacific LLC</h4>
+                        <p class="timeline-date">January 2022 - July 2022</p>
+                        <ul class="experience-list">
+                            <li>Maintained seamless dataflow for consumers</li>
+                            <li>Set up complex analytics, dashboards, alerting, and monitoring to maximize business output</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Programmer Trainee</h3>
+                        <h4>National Institute of Electronics and Information Technology, New Delhi</h4>
+                        <p class="timeline-date">August 2021 - October 2021</p>
+                        <ul class="experience-list">
+                            <li>Created a Python application using image processing and Deep Learning libraries</li>
+                            <li>Automated candidate image validation, reducing manual review time by 4+ hours daily</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-		<!-- Nav -->
-		<nav id="nav">
-			<ul class="links">
-				<li class="active"><a href="#skills">Skills</a></li>
-				<li><a href="#projects">Projects</a></li>
-				<li><a href="#about">About</a></li>
-				<li><a href="#contact">Contact</a></li>
-			</ul>
-			<ul class="icons">
-				<li><a href="https://github.com/Sanshrit" class="icon brands fa-github" target="_blank"><span
-							class="label">GitHub</span></a></li>
-				<li><a href="https://www.linkedin.com/in/sanshrit" class="icon brands fa-linkedin" target="_blank"><span
-							class="label">LinkedIn</span></a></li>
-			</ul>
-		</nav>
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3>Advanced Image Manipulation and Enhancement</h3>
+                        <p class="project-date">October 2024 - December 2024</p>
+                        <p class="project-tech">Java, Java Swing</p>
+                        <p class="project-description">Designed a Java-based image enhancement application with MVC architecture, enabling complex operations like compression, filters, levels adjustment, and color correction while ensuring scalability and maintainability through OOP design patterns.</p>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-small disabled">Code <i class="fas fa-code"></i></a>
+                            <a href="#" class="btn btn-small disabled">Demo <i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3>Automating Production Data Updation</h3>
+                        <p class="project-date">September 2022 - January 2023</p>
+                        <p class="project-tech">Python, MS Power Automate, PI Web API</p>
+                        <p class="project-description">Optimized data management by scaling a Python automation script to 15+ paper-making sites, managing 300+ tables, and eliminating manual data entry into the Production Time Series database.</p>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-small disabled">Code <i class="fas fa-code"></i></a>
+                            <a href="#" class="btn btn-small disabled">Demo <i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3>Analysis Of Motor Skills for Parkinson's Disease Diagnosis</h3>
+                        <p class="project-date">December 2021 - July 2022</p>
+                        <p class="project-tech">Wireless communication, Python, ML</p>
+                        <p class="project-description">Achieved 91.6% accuracy in Parkinson's detection using Decision Trees by building hardware to collect motor skills data and applying ML models (KNN, SVM, Logistic Regression, Decision Trees, Random Forests) for classification.</p>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-small">Paper <i class="fas fa-file-alt"></i></a>
+                            <a href="#" class="btn btn-small disabled">Code <i class="fas fa-code"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-		<!-- Main -->
-		<div id="main">
+    <!-- Research Section -->
+    <section id="research" class="research">
+        <div class="container">
+            <h2 class="section-title">Research Work</h2>
+            <div class="research-item">
+                <h3>Analysis Of Motor Skills for Parkinson's Disease Diagnosis</h3>
+                <p>IEEE OITS International Conference on Information Technology (OCIT, 2023) - Data Science</p>
+                <p class="research-description">Research focused on using machine learning techniques to analyze motor skills data for early detection of Parkinson's disease, achieving high accuracy with decision tree models.</p>
+                <a href="#" class="btn">View Paper</a>
+            </div>
+        </div>
+    </section>
 
-			<!-- Skills Section -->
-			<style>
-				.skills-container {
-					width: 100%;
-					max-width: 600px;
-					margin: auto;
-				}
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contact Me</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Boston, MA, 02130</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <p><a href="mailto:bakshi.san@northeastern.edu">bakshi.san@northeastern.edu</a></p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <p><a href="tel:+16172128357">+1 617-212-8357</a></p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-linkedin"></i>
+                        <p><a href="https://linkedin.com/in/sanshrit" target="_blank">linkedin.com/in/sanshrit</a></p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-github"></i>
+                        <p><a href="https://github.com/Sanshrit" target="_blank">github.com/Sanshrit</a></p>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
 
-				.dropdown {
-					background-color: #f8f9fa;
-					color: #333;
-					padding: 10px;
-					border: 1px solid #ddd;
-					cursor: pointer;
-					text-align: left;
-					width: 100%;
-					font-size: 18px;
-					font-weight: bold;
-					text-align: center;
-				}
-
-				.dropdown-content {
-					display: none;
-					padding: 10px;
-					border: 1px solid #ddd;
-					border-top: none;
-				}
-			</style>
-
-			<div class="skills-container">
-				<button class="dropdown" onclick="toggleDropdown('languages')">Programming Languages</button>
-				<div id="languages" class="dropdown-content">
-					Python, C/C++, JavaScript, SQL, HTML/CSS
-				</div>
-
-				<button class="dropdown" onclick="toggleDropdown('frameworks')">Libraries & Frameworks</button>
-				<div id="frameworks" class="dropdown-content">
-					Node.js, Django, React, TensorFlow, PyTorch
-				</div>
-
-				<button class="dropdown" onclick="toggleDropdown('tools')">Tools & Technologies</button>
-				<div id="tools" class="dropdown-content">
-					AWS, Docker, Kubernetes, MongoDB, MySQL, Neo4j
-				</div>
-			</div>
-
-			<script>
-				function toggleDropdown(id) {
-					var content = document.getElementById(id);
-					content.style.display = content.style.display === "block" ? "none" : "block";
-				}
-			</script>
-			<!-- Featured Project -->
-			<section id="projects">
-				<article class="post featured">
-					<header class="major">
-						<h2>Featured Project</h2>
-						<p>My most recent work</p>
-					</header>
-					<a target="_blank" href="https://github.com/rohanddave/PdpImageManipulatorAndEnhancer"
-						class="image main"><img src="images/pic01.png" alt="Featured Project" /></a>
-					<div class="content">
-						<p>Java / Java Swing based image processing application which implements complex image
-							operations. The application is designed with strict adherence to Object oriented principles
-							and design patterns (Adapter, Command, MVC) for long term reliability and scalability.
-							</p>
-					</div>
-					<ul class="actions special">
-						<li><a href="https://github.com/rohanddave/PdpImageManipulatorAndEnhancer" class="button large" target="_blank">View
-								Project</a></li>
-					</ul>
-				</article>
-			</section>
-
-			<!-- Projects -->
-			<section class="posts">
-				
-				<article>
-					<header>
-						<h2>Airline Sentiment Analysis</h2>
-					</header>
-					<a href="#" class="image fit"><img src="images/pic03.jpg" alt="Data Analysis Dashboard" /></a>
-					<p>Coming Soon.....</p>
-					<ul class="actions special">
-						<li><a href="#" class="button">View Project</a></li>
-					</ul>
-				</article>
-				<article>
-					<header>
-						<h2>Machine Learning Model</h2>
-					</header>
-					<a href="#" class="image fit"><img src="images/pic04.jpg" alt="Machine Learning Model" /></a>
-					<p>Coming Soon...</p>
-					<ul class="actions special">
-						<li><a href="#" class="button">View Project</a></li>
-					</ul>
-				</article>
-			</section>
-
-			<!-- About Section -->
-			<section id="about" class="post featured">
-				<header class="major">
-					<h2>About Me</h2>
-				</header>
-				<div class="content">
-					<p>
-						I am a dedicated software engineer with a strong passion for Artificial Intelligence and Data
-						Science. With prior experience in operations, I have worked extensively with technologies,
-						including AVEVA OSISoft PI Time Series Historian, Python, AWS, and SQL. Throughout my career, I
-						have taken on leadership roles, managing projects, ensuring system stability during critical
-						failure scenarios, and driving solutions that make a tangible impact.<br></p>
-					<p> My long-term vision includes stepping into leadership positions where I can influence decisions
-						and
-						guide teams toward innovation. Beyond technical expertise, I enjoy teaching and sharing
-						knowledge,
-						which aligns with my strong communication skills and desire to inspire others.</p>
-
-					<p>
-						Whether working on complex technical challenges, fostering collaboration, or mentoring peers, I
-						am
-						committed to growth, innovation, and making meaningful contributions to the tech industry.
-					</p>
-				</div>
-			</section>
-
-		</div>
-
-		<!-- Footer -->
-		<footer id="footer">
-			<section id="contact">
-				<h2>Get In Touch</h2>
-				<form method="post" action="#">
-					<div class="fields">
-						<div class="field">
-							<label for="name">Name</label>
-							<input type="text" name="name" id="name" />
-						</div>
-						<div class="field">
-							<label for="email">Email</label>
-							<input type="text" name="email" id="email" />
-						</div>
-						<div class="field">
-							<label for="message">Message</label>
-							<textarea name="message" id="message" rows="3"></textarea>
-						</div>
-					</div>
-					<ul class="actions">
-						<li><input type="submit" value="Send Message" /></li>
-					</ul>
-				</form>
-			</section>
-			<section class="split contact">
-				<section class="alt">
-					<h3>Location</h3>
-					<p>Boston, MA</p>
-				</section>
-				<section>
-					<h3>Email</h3>
-					<p><a href="mailto:sanshrit@example.com">sanshritbakshi@gmail.com</a></p>
-				</section>
-				<section>
-					<h3>Social</h3>
-					<ul class="icons alt">
-						<li><a href="https://github.com/Sanshrit" class="icon brands fa-github" target="_blank"><span
-									class="label">GitHub</span></a></li>
-						<li><a href="https://www.linkedin.com/in/sanshrit" class="icon brands fa-linkedin"
-								target="_blank"><span class="label">LinkedIn</span></a></li>
-					</ul>
-				</section>
-			</section>
-		</footer>
-
-		<!-- Copyright -->
-		<div id="copyright">
-			<ul>
-				<li>&copy; 2025 Sanshrit Bakshi</li>
-				<li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
-			</ul>
-		</div>
-
-	</div>
-
-	<!-- Scripts -->
-	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/jquery.scrollex.min.js"></script>
-	<script src="assets/js/jquery.scrolly.min.js"></script>
-	<script src="assets/js/browser.min.js"></script>
-	<script src="assets/js/breakpoints.min.js"></script>
-	<script src="assets/js/util.js"></script>
-	<script src="assets/js/main.js"></script>
-
-	<style>
-		.skill-list {
-			list-style: none;
-			padding-left: 0;
-			margin: 0 0 2em 0;
-		}
-
-		.skill-list li {
-			padding-left: 1.5em;
-			position: relative;
-			margin-bottom: 0.5em;
-		}
-
-		.skill-list li:before {
-			content: "▹";
-			position: absolute;
-			left: 0;
-			color: #18bfef;
-		}
-
-		@media screen and (max-width: 736px) {
-			.col-4.col-12-small {
-				margin-bottom: 2em;
-			}
-		}
-	</style>
-
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Sanshrit Bakshi. All Rights Reserved.</p>
+        </div>
+    </footer>
 </body>
-
 </html>
